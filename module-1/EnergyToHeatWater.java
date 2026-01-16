@@ -29,7 +29,7 @@ public class EnergyToHeatWater {
 
         double energy = mass * (finalTemp - initialTemp) * 4184;
 
-        System.out.println("The energy needed is " + energy + " joules.");
+        System.out.printf("The energy needed is %.0f joules.", energy);
 
         input.close();
     }
