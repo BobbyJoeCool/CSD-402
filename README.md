@@ -210,4 +210,3 @@ Do not forget to include the @ symbol at the end of each line.
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_3_csd402.zip.
 - Attach the zip file to this assignment.
-- Click on the following for instructions:
