@@ -4,6 +4,30 @@ Write a program that prompts the user to enter 10 numbers and displays the mean 
 (See Book for Formula)
 */
 
+import java.util.Scanner;
+
 public class ComputeMeanAndStandardDeviation {
-    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double sum = 0, sumSquared = 0;
+
+        System.out.println("Enter 10 numbers to find the standard deviation and mean.\n");
+
+        // Loops for the 10 input, then gets a sum, and a sum of the Squares
+        for (int i=0; i < 10; i++) {
+            System.out.print("Enter a number: ");
+            double value = input.nextDouble();
+            sum += value;
+            sumSquared += Math.pow(value, 2);
+        }
+
+        input.close();
+
+        double mean = sum / 10;
+        double deviation = Math.sqrt((sumSquared - (sum * sum) / 10) / (9));
+
+        System.out.printf("The mean is %.6f%n", mean);
+        System.out.printf("The standard deviation is %.6f%n", deviation);
+    }
 }

@@ -11,7 +11,53 @@ for (i = 1; i <= numberOfYears * 12; i++) {
     + "\t\t" + principal + "\t\t" + balance);
 }
 */
+import java.util.Scanner;
 
 public class LoanAmortizationSchedule {
-    
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Loan Amount: ");
+        double loanAmount = input.nextDouble();
+
+        System.out.print("Number of Years: ");
+        int numberOfYears = input.nextInt();
+
+        System.out.print("Annual Interest Rate (e.g., 7.5): ");
+        double annualInterestRate = input.nextDouble();
+
+        input.close();
+
+        double monthlyInterestRate = (annualInterestRate / 100.0) / 12.0;
+        int numberOfMonths = numberOfYears * 12;
+        // Monthly payment formula: M = P * r / (1 - (1 + r) ^ (-n))
+        double monthlyPayment;
+        if (monthlyInterestRate == 0) {
+            monthlyPayment = loanAmount / numberOfMonths;
+        } else {
+            monthlyPayment = loanAmount * monthlyInterestRate
+                    / (1 - 1 / Math.pow(1 + monthlyInterestRate, numberOfMonths));
+        }
+
+        double balance = loanAmount;
+
+        System.out.printf("%nMonthly Payment: %.2f%n", monthlyPayment);
+        System.out.printf("Total Payment: %.2f%n%n", monthlyPayment * numberOfMonths);
+
+        System.out.println("Payment#\tInterest\tPrincipal\tBalance");
+
+        for (int paymentNumber = 1; paymentNumber <= numberOfMonths; paymentNumber++) {
+            double interest = monthlyInterestRate * balance;
+            double principal = monthlyPayment - interest;
+            balance -= principal;
+            // Prevent a tiny negative balance from floating - point rounding near the end
+            if (balance < 0) {
+                balance = 0;
+            }
+
+            System.out.printf("%d\t\t%.2f\t\t%.2f\t\t%.2f%n",
+                    paymentNumber, interest, principal, balance);
+        }
+    }
 }

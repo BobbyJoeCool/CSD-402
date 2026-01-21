@@ -6,5 +6,16 @@ Write a program that displays the e value for i = 1, 2, …, and 20. Format the 
 */
 
 public class ComputeE {
-    
+    public static void main(String[] args) {
+        double e = 1.0;
+        double item = 1.0;
+        
+        for (int i = 1; i <= 20; i ++) {
+            item /= i;
+            e += item;
+            System.out.printf("for i = %d the value of e is %.16f %n", i, e);
+        }
+    }
 }
+
+
