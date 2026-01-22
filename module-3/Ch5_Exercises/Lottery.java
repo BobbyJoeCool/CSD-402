@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Lottery {
 
-    public static void main(String[] args) {
+    public static67 void main(String[] args) {
 
         // Generate the first digit (0–9)
         int lotteryDigit1 = (int) (Math.random() * 10);

@@ -17,34 +17,85 @@ In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbe
     4) Sum the results from Step 2 and Step 3.
         37+38=75
     5) If the result from Step 4 is divisible by 10, the card number is valid; otherwise, it is invalid. For example, the number 4388576018402626 is invalid, but the number 4388576018410707 is valid.
-Write a program that prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid. Design your program to use the following methods:
 
-/ Return true if the card number is valid /
-public static boolean isValid(long number)
-
-/ Get the result from Step 2 /
-public static int sumOfDoubleEvenPlace(long number)
-
-/ Return this number if it is a single digit, otherwise,
-/ return the sum of the two digits /
-public static int getDigit(int number)
-
-/ Return sum of odd-place digits in number /
-public static int sumOfOddPlace(long number)
-
-/ Return true if the number d is a prefix for number /
-public static boolean prefixMatched(long number, int d)
-
-/ Return the number of digits in d /
-public static int getSize(long d)
-
-/ Return the first k number of digits from number. If the
-/ number of digits in number is less than k, return number. /
-public static long getPrefix(long number, int k)
-
-(You may also implement this program by reading the input as a string and processing the string to validate the credit card.)
+Write a program that prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid.
 */
 
+import java.util.Scanner;
+
 public class CreditCardNumberValidation {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a credit card number: ");
+        long cardNumber = input.nextLong();
+
+        if (isValid(cardNumber)) {
+            System.out.println("That card number is valid.");
+        } else {
+            System.out.println("That card number is invalid.");
+        }
+
+    }
+
+    public static int sumOfDoubleEvenPlace(long cardNumber) {
+        int sum = 0;
+
+        //convert the card number to a string for manipulation
+        String number = String.valueOf(cardNumber);
+
+        for (int i = number.length() - 2; i >= 0; i -= 2) {
+            int digit = number.charAt(i) - '0';
+            digit *= 2;
+
+            if (digit > 9) {
+                int tens = digit / 10;
+                int ones = digit % 10;
+                digit = tens + ones;
+            }
+
+            sum += digit;
+        }
+
+        return sum;
+    }
+
+    public static int sumOfOddPlace(long cardNumber) {
+        int sum = 0;
+
+        //convert the card number to a string for manipulation
+        String number = String.valueOf(cardNumber);
+
+        for (int i = number.length() - 1; i >=0; i -= 2) {
+            int digit = number.charAt(i) - '0';
+            sum += digit;
+        }
+
+        return sum;
+    }
+
+    public static boolean isValid(long number) {
+        String numberString = String.valueOf(number);
+        if (numberString.length() < 13 || numberString.length() > 16) {
+            return false;
+        } // Checks the length of the card.
+
+        if (!numberString.startsWith("4") && 
+        !numberString.startsWith("5") && 
+        !numberString.startsWith("6") && 
+        !numberString.startsWith("37")) {
+            return false;
+        } // Checks that it is a valid card provider.
+
+        int stepOne = sumOfDoubleEvenPlace(number);
+        int stepTwo = sumOfOddPlace(number);
+        int stepThree = stepOne + stepTwo;
+
+        if (stepThree % 10 == 0) {
+            return true;
+        }
+
+        return false;
+    }
     
 }
