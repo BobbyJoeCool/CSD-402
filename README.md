@@ -210,3 +210,63 @@ Do not forget to include the @ symbol at the end of each line.
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_3_csd402.zip.
 - Attach the zip file to this assignment.
+
+## Week Three
+
+### Module Four: Single-Dimensional Arrays
+
+In the last module, we learned about working with iteration using while, for, and do/while loops, along with break and continue. In this module, we will learn about writing and using methods. We also covered loops, nested loops, and multiple Boolean tests to control multiple iterations, along with working with parameter types, number of, and order, and parameters pass-by-value and pass-by-reference. In this module, we will be introduced to single-dimensional arrays, declaring, filling, and modifying. Lastly, we will work with array types and default values.
+
+#### Deliverables
+
+- Review Module Resources.
+- Module 4 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 4 Programming Assignment - Due by Sunday 11:59 p.m., CST. 
+
+#### Resources
+
+- Provided Videos and Examples:
+    - Array Basics Videos & Examples
+    - Other Array Features Video & Examples
+    - Command Line Videos & Examples
+    - Arrays and Methods & Examples
+    - Array Class Videos & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 7
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/) to include Array and ArrayLists.
+
+#### Discussion Board
+
+**Discussion Question**
+
+Research the Internet for an article on the current state of Java. Read the article and post your review on the Discussion Board in your own words, correctly quoting anything you may copy. Ensure you also:
+
+- Share your opinions on the current state.
+- Address how “Open Source” is related to the current version of Java?
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 4.2: Single-Dimensional Arrays
+
+Write four overloaded methods that return the average of an array with the following headers:
+
+- public static short average (short [ ] array)
+- public static int average (int [ ] array)
+- public static long average (long [ ] array)
+- public static double average (double [ ] array)
+
+Write a test program that invokes each of these methods and then displays the average value returned, along with a display of the original array elements. Ensure the display is easy to read and understandable. Lastly, each array sent into the methods must be of different sizes to ensure the method code is correctly written.
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_4_csd402.zip.
+- Attach the zip file to this assignment.
