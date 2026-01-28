@@ -7,7 +7,62 @@ The coefficients of a quadratic equation ax2+bx+c=0 are passed to the array eqn 
 Write a program that prompts the user to enter values for a , b , and c and displays the number of real roots and all real roots.
 */
 
+import java.util.Scanner;
 
 public class SolveQuadraticEquations {
-    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("ax^2 + bx + c = 0.  Quadratic Equation Solver!");
+        System.out.println("Enter values for a, b, and c: ");
+        System.out.print("a = ");
+        double a = input.nextDouble();
+
+        if (a == 0) {
+            System.out.println("If 'a' is 0, it is a linear equation.");
+            return;
+        }
+
+        System.out.print("b = ");
+        double b = input.nextDouble();
+        System.out.print("c = ");
+        double c = input.nextDouble();
+
+        double eqn[] = {a, b, c};
+        double roots[] = new double[2];
+
+        int rootCount = solveQuadratic(eqn, roots);
+
+        System.out.printf("Your equation has %d real roots.%n", rootCount);
+
+        switch (rootCount) {
+            case 1:
+                System.out.printf("The root is %.4f.%n", roots[0]);
+                break;
+            case 2:
+                System.out.printf("Those roots are %.4f and %.4f.%n", roots[0], roots[1]);
+                break;
+            case 0:
+                System.out.println("No real roots.");
+        }
+    }
+
+    public static int solveQuadratic(double[] eqn, double[] roots) {
+        double a = eqn[0];
+        double b = eqn[1];
+        double c = eqn[2];
+
+        double discriminant = (b * b) - (4 * a * c);
+
+        if (discriminant > 0) {
+            roots[0] = (-b + Math.sqrt(discriminant)) / (2 * a);
+            roots[1] = (-b - Math.sqrt(discriminant)) / (2 * a);
+            return 2;
+        } else if (discriminant == 0) {
+            roots[0] = -b / (2*a);
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

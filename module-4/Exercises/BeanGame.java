@@ -9,6 +9,71 @@ Write a program that simulates the bean machine. Your program should prompt the 
 Hint: Create an array named slots. Each element in slots stores the number of balls in a slot. Each ball falls into a slot via a path. The number of Rs in a path is the position of the slot where the ball falls. For example, for the path LRLRLRR, the ball falls into slots[4], and for the path RRLLLLL, the ball falls into slots[2].
 */
 
+import java.util.Scanner;
+
 public class BeanGame {
-    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("How many balls do you want to drop: ");
+        int balls = input.nextInt();
+
+        System.out.print("How many slots will there be at the end: ");
+        int numberOfSlots = input.nextInt();
+        int[] slots = new int[numberOfSlots];
+
+        for (int i = 1; i <= balls; i ++) {
+            String path = simulateBallPath(numberOfSlots);
+            System.out.println("Path of Ball " + i + ": " + path);
+            int slotNumber = getSlotFromPath(path);
+            slots[slotNumber] ++;
+        }
+
+        displayHistogram(slots);
+    }
+
+    public static String simulateBallPath(int numberOfSlots) {
+        String path = "";
+        for (int turns = 1; turns < numberOfSlots; turns ++) {
+                int direction = (int)(Math.random()*2);
+            switch (direction) {
+                case 0 -> path += "L";
+                case 1 -> path += "R";
+            }
+        }
+        return path;
+    }
+
+    public static int getSlotFromPath(String path) {
+        int slot = 0;
+        // Count the number of right turns to find the slot it lands in.
+        for (int i = 0; i < path.length(); i++) {
+            if (path.charAt(i) == 'R') {
+                slot++;
+            }
+        }
+        return slot;
+    }
+
+    public static void displayHistogram(int[] slots) {
+        System.out.println();
+        int slotMax = 0;
+        // for loop finds the slot with the most balls.
+        for (int i = 0; i < slots.length; i++) { 
+            if (slots[i] > slotMax) {
+                slotMax = slots[i];
+            }
+        }
+
+        for (int row = slotMax; row > 0; row--) {
+            for (int slot = 0; slot < slots.length; slot ++) {
+                if (slots[slot] >= row) {
+                    System.out.print("| * ");
+                } else {
+                    System.out.print("|   ");
+                }
+            }
+            System.out.println("|");
+        }
+        System.out.println("-".repeat(slots.length * 4 + 1));
+    }
 }
