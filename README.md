@@ -212,7 +212,8 @@ Do not forget to include the @ symbol at the end of each line.
 - Attach the zip file to this assignment.
 
 ## Week Three
-January 26th, 2026 through February 1st, 2026
+
+**Monday, January 26th through Sunday, February 1st**
 
 ### Module Four: Single-Dimensional Arrays
 
@@ -273,7 +274,8 @@ Submit your assignment by clicking in the Module Assignment, then use the Attach
 - Attach the zip file to this assignment.
 
 ## Week Four
-Fabruary 2nd, 2026 through February 8th, 2026
+
+**Monday, February 2nd through Sunday, February 8th**
 
 ### Module Five: Multi-Dimensional Arrays
 
