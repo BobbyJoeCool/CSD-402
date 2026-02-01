@@ -212,6 +212,7 @@ Do not forget to include the @ symbol at the end of each line.
 - Attach the zip file to this assignment.
 
 ## Week Three
+January 26th, 2026 through February 1st, 2026
 
 ### Module Four: Single-Dimensional Arrays
 
@@ -269,4 +270,126 @@ Write a test program that invokes each of these methods and then displays the av
 Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_4_csd402.zip.
+- Attach the zip file to this assignment.
+
+## Week Four
+Fabruary 2nd, 2026 through February 8th, 2026
+
+### Module Five: Multi-Dimensional Arrays
+
+In the last module, we learned about passing to and returning arrays from methods. In this module, we learn about multiple-dimensional arrays, and to work with them, filling, accessing, and using nested loops to iterate through them.
+
+#### Deliverables
+- Review Module Resources.
+- Module 5 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 5 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+- Provided Videos and Examples:
+    - Arrays Symmetrical Video & Examples
+    - Arrays Asymmetrical Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 8
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/) to include Data Structures.
+
+#### Discussion Board
+
+**Discussion Question:**
+
+What skills and personality traits do you have to contribute to a software development team/company?
+
+As a programmer/developer, you will need to know what positive traits you can bring to a team/company you may work for, or are currently working for. So, for this question, talk about yourself and how you expect working for a team/company will help.
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 5.2: Arrays & Methods
+
+Write methods using the following headers that return the location of the largest element in the array passed to the method, returning a one-dimensional array that contains two location elements.
+
+```java
+public static int [ ] locateLargest (double [ ][ ] arrayParam)
+public static int [ ] locateLargest (int [ ][ ] arrayParam)
+```
+
+Then, write methods using the following headers that return the location of the smallest element in the array passed to the method, returning a one-dimensional array that contains two location elements.
+
+```java
+public static int [ ] locateSmallest (double [ ][ ] arrayParam)
+public static int [ ] locateSmallest (int [ ][ ] arrayParam)
+```
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_5_csd402.zip.
+- Attach the zip file to this assignment.
+
+### Module Six: Objects and Classes
+
+In the last module, we learned about multiple-dimensional arrays and to work with them, filling, accessing, and using nested loops to iterate through them. In this module, you will be introduced to Java’s Object-Oriented development. You will create classes and instances of them, learn how to work with multiple classes, and modify their instances.
+
+#### Deliverables
+
+- Review Module Resources.
+- Module 6 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 6 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+
+- Provided Videos and Examples:
+    - Objects and Classes Video & Examples
+    - Data and Methods Video & Examples
+    - Static Final Methods & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 9
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/) to include Classes/Objects, Class Attributes, Java Methods, Class Methods, Java Methods Parameters, and Java Constructors.
+
+#### Discussion Board
+
+**Discussion Question:**
+
+Discuss the following topics on Java methods. Provide a code example where necessary to elaborate on your thoughts. Select at least two of the following topics for your initial post.
+
+- Creating a Class vs. Creating an Object
+- Multiple Object Instances
+- Working with Multiple Classes
+- Accessing and Modifying Attributes
+- Java Library Classes
+- Class Methods
+
+#### Assignment
+
+##### Assignment 6.2: Objects and Classes
+
+Required Action:
+
+Write a program with a class titled Fan. This class is to contain:
+
+- Four constants named STOPPED, SLOW, MEDIUM, and FAST. The constants are to hold the values of 0, 1, 2, and 3, respectively.
+- A private field named speed that holds one of the constant values, with the default being STOPPED.
+- A private Boolean field titled on that specifies whether the fan is on or off.
+- A private field named radius that holds the radius of the fan with a default value of 6.
+- A String field that holds the color, with the default being white.
+- Setter and getter methods for all mutable fields.
+- A no-argument constructor that sets all fields to a default value.
+- A constructor takes arguments and sets values.
+- Write a toString() method that returns a description of the Fans' state.
+- Write test code that creates two instances of the Fan class, one using the default constructor and the other using the argument constructor. Write code that displays the functionality of the Fan class methods.
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_6_csd402.zip.
 - Attach the zip file to this assignment.
