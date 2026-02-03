@@ -1,18 +1,108 @@
 /* 
-Write a program with a class titled Fan. This class is to contain:
-
-Four constants named STOPPED, SLOW, MEDIUM, and FAST. The constants are to hold the values of 0, 1, 2, and 3, respectively.
-A private field named speed that holds one of the constant values, with the default being STOPPED.
-A private Boolean field titled on that specifies whether the fan is on or off.
-A private field named radius that holds the radius of the fan with a default value of 6.
-A String field that holds the color, with the default being white.
-Setter and getter methods for all mutable fields.
-A no-argument constructor that sets all fields to a default value.
-A constructor takes arguments and sets values.
-Write a toString() method that returns a description of the Fans' state.
-Write test code that creates two instances of the Fan class, one using the default constructor and the other using the argument constructor. Write code that displays the functionality of the Fan class methods.
+    Breutzmann, Robert
+    CSD 402 - Java for Programmers
+    Assignment 6.2
+    Due Date: February 8th, 2026
 */
 
 public class ClassesAndObjects {
+    public static void main(String[] args) {
+        Fan standingFan = new Fan();
+        Fan boxFan = new Fan(Fan.FAST, 10, "black");
+
+        System.out.println("Standing Fan (No-Argument Constructor)");
+        System.out.println(standingFan + "\n");
+        System.out.println("Box Fan (Constructor)");
+        System.out.println(boxFan);
+    }
+}
+
+class Fan{
+    public static final int STOPPED = 0;
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
+
+    private int speed;
+    private boolean on; 
+    private double radius;
+    private String color;
+
+    public Fan() {
+        speed = STOPPED;
+        on = false;
+        radius = 6.0;
+        color = "white";
+    }
+
+    public Fan(int speed, double radius, String color) {
+        setSpeed(speed); // This sets the speed AND the on/off state.
+        setRadius(radius); 
+        this.color = color;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        // Validate the speed
+        if (speed == STOPPED || speed == SLOW || speed == MEDIUM || speed == FAST) {
+            this.speed = speed;
+            // speed != STOPPED (if STOPPED, this will be false, when ANYTHING else, it will be on)
+            this.on = speed != STOPPED;
+        }
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
+    public void setOn(boolean on) {
+        this.on = on;
+
+// If the fan is off, set the speed to STOPPED.
+        if (!on) {
+            this.speed = STOPPED;
+// If the fan is on and the speed is STOPPED, move the fan to SLOW.
+        } else if (this.speed == STOPPED) { 
+            this.speed = SLOW;
+        }
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        if (radius > 0) {
+            this.radius = radius;
+        }
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override 
+    // Overrides Object.toString() so printing the object uses this string.
+    public String toString() {
+        // Gets a string for On or Off based on the on switch
+        String onToggle = this.on ? "on" : "off";
+
+        String speedState = switch (this.speed) {
+            case STOPPED -> "Stopped";
+            case SLOW -> "Slow";
+            case MEDIUM -> "Medium";
+            case FAST -> "Fast";
+            default -> "Broken";
+        };
+        
+        return "The " + this.color + " fan with a radius of " + this.radius + " is " + onToggle + " at a speed of " + speedState + ".";
+    }
 
 }

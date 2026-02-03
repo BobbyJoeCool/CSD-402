@@ -3,5 +3,7 @@ A Latin square is an n-by-n array filled with n different Latin letters, each oc
 */
 
 public class LatinSquare {
-    
+    public static void main(String[] args) {
+        
+    }
 }
