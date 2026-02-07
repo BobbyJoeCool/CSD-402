@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class ArraysAndMethods {
     public static void main(String[] args) {
-        int[][] intMatrix = {
+        int[][] intMatrix = { // Create a 5x5 Matrix of ints
             {12, 7, 19, 3, 25},
             {4, 16, 9, 21, 1},
             {18, 5, 23, 8, 14},
@@ -17,7 +17,7 @@ public class ArraysAndMethods {
             {22, 10, 24, 15, 13}
         };
 
-        double[][] doubleMatrix = {
+        double[][] doubleMatrix = { // Create a 5x5 Matrix of doubles
             {1.5, 22.8, 13.4, 7.9, 18.2},
             {9.1, 3.6, 25.7, 14.0, 6.3},
             {17.5, 11.2, 4.8, 20.9, 2.1},
@@ -39,8 +39,8 @@ public class ArraysAndMethods {
         // Initalize the array for the location of the max value
         int[] maxLocation = {0, 0};
 
-        for (int row = 0; row < matrix.length; row++) { //Go through rows
-            for (int col = 0; col < matrix[row].length; col++) { //Go through columns
+        for (int row = 0; row < matrix.length; row++) { // Go through rows
+            for (int col = 0; col < matrix[row].length; col++) { // Go through columns
                 if (matrix[row][col] > max) {
                     max = matrix[row][col];
                     maxLocation[0] = row;
@@ -52,10 +52,12 @@ public class ArraysAndMethods {
     }
 
     public static int[] locateLargest(int[][] matrix) {
+        // Initalize the variable to track max value, start with the first value.
         int max = matrix[0][0];
+        // Initalize the array for the location of the max value
         int[] maxLocation = {0, 0};
-        for (int row = 0; row < matrix.length; row++) {
-            for (int col = 0; col < matrix[row].length; col++) {
+        for (int row = 0; row < matrix.length; row++) { // Go through rows
+            for (int col = 0; col < matrix[row].length; col++) { // Go through columns
                 if (matrix[row][col] > max) {
                     max = matrix[row][col];
                     maxLocation[0] = row;
@@ -67,10 +69,12 @@ public class ArraysAndMethods {
     }
 
     public static int[] locateSmallest(double[][] matrix) {
+        // Initalize the variable to track min value, start with the first value.
         double min = matrix[0][0];
+        // Initalize the array for the location of the min value
         int[] minLocation = {0, 0};
-        for (int row = 0; row < matrix.length; row++) {
-            for (int col = 0; col < matrix[row].length; col++) {
+        for (int row = 0; row < matrix.length; row++) { // Go through rows
+            for (int col = 0; col < matrix[row].length; col++) { // Go through columns
                 if (matrix[row][col] < min) {
                     min = matrix[row][col];
                     minLocation[0] = row;
@@ -81,11 +85,13 @@ public class ArraysAndMethods {
         return minLocation;
     }
 
-    public static int[] locateSmallest(int[][] matrix) {
+    public static int[] locateSmallest(int[][] matrix) {        
+        // Initalize the variable to track min value, start with the first value.
         int min = matrix[0][0];
+        // Initalize the array for the location of the min value
         int[] minLocation = {0, 0};
-        for (int row = 0; row < matrix.length; row++) {
-            for (int col = 0; col < matrix[row].length; col++) {
+        for (int row = 0; row < matrix.length; row++) { // Go through rows
+            for (int col = 0; col < matrix[row].length; col++) { // Go through columns
                 if (matrix[row][col] < min) {
                     min = matrix[row][col];
                     minLocation[0] = row;

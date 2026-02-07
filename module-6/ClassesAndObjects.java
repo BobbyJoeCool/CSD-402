@@ -18,16 +18,19 @@ public class ClassesAndObjects {
 }
 
 class Fan{
+    // Create the constants for the fan speeds.
     public static final int STOPPED = 0;
     public static final int SLOW = 1;
     public static final int MEDIUM = 2;
     public static final int FAST = 3;
 
+    // Create private variables to control the fan.
     private int speed;
     private boolean on; 
     private double radius;
     private String color;
 
+    // No argument constructor
     public Fan() {
         speed = STOPPED;
         on = false;
@@ -35,6 +38,7 @@ class Fan{
         color = "white";
     }
 
+    // Argument Constructor.
     public Fan(int speed, double radius, String color) {
         setSpeed(speed); // This sets the speed AND the on/off state.
         setRadius(radius); 
@@ -75,6 +79,7 @@ class Fan{
     }
 
     public void setRadius(double radius) {
+        // Validate the radius is a positive number.
         if (radius > 0) {
             this.radius = radius;
         }
@@ -94,7 +99,7 @@ class Fan{
         // Gets a string for On or Off based on the on switch
         String onToggle = this.on ? "on" : "off";
 
-        String speedState = switch (this.speed) {
+        String speedState = switch (this.speed) { // Rule switch to set the string for the speed. 
             case STOPPED -> "Stopped";
             case SLOW -> "Slow";
             case MEDIUM -> "Medium";
@@ -102,7 +107,7 @@ class Fan{
             default -> "Broken";
         };
         
-        return "The " + this.color + " fan with a radius of " + this.radius + " is " + onToggle + " at a speed of " + speedState + ".";
+        return "The " + this.color + " fan with a radius of " + this.radius + " is " + onToggle + " at a speed of " + speedState + "."; // Constructs the string with the state of the fan.
     }
 
 }
