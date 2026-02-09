@@ -395,3 +395,69 @@ Write a program with a class titled Fan. This class is to contain:
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_6_csd402.zip.
 - Attach the zip file to this assignment.
+
+## Week Five
+
+**Monday, February 9th through Sunday, February 15th**
+
+### Module Seven: Oriented Class and Thinking
+
+In the last module, you learned about encapsulation, passing object instances to methods, using the “this” reference, and variable scope. In this module, you will learn about the differences between procedural and Object-Oriented development, the StringBuilder and StringBuffer classes, and primitive wrapper classes.
+
+#### Deliverables
+- Review Module Resources.
+- Module 7 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 7 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+- Provided Videos and Examples:
+    - Packages Video & Examples
+    - Methods Objects Video & Examples
+    - Immutable Objects, Scope, and ‘this’ Video & Examples
+    - Wrapper Classes Video & Examples
+    - Java Strings Video & Examples
+    - String Builder Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 10
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/) to include Classes/Objects, Class Attributes, Java Methods, Class Methods, Java Methods Parameters, and Java Constructors Java Modifiers, Java Encapsulation, and Java Packages/API.
+
+#### Discussion Board
+
+**Discussion Question:**
+
+Select at least two of the following topics on Java features for your initial post. Provide a code example, where necessary, to elaborate your thoughts.
+
+- Field Encapsulation
+- Objects with Methods and Methods Receiving Instances
+- A Collection of Object Instances
+- The ‘this’ Reference
+- Variable Scope
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 7.2: Oriented Classes and Thinking
+
+**Required Action:**
+
+Starting with your code from the Module 6 Programming Assignment, create the following new class titled UseFans:
+
+- Create a collection of Fan instances.
+- Create a method taking a collection of Fan instances for displaying without using the toString() method.
+- Create a method that takes a single instance of a Fan for displaying without using the toString() method.
+- Use the ‘this’ reference throughout the Fan class where allowed.
+- Write test code that creates a collection of Fans and displays the functionality of all the Fan instances in the collection.
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_7_csd402.zip.
+- Attach the zip file to this assignment.
+- Click on the following for instructions:
