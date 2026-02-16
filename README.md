@@ -461,3 +461,80 @@ Starting with your code from the Module 6 Programming Assignment, create the fol
     - Example: darrell_mod_7_csd402.zip.
 - Attach the zip file to this assignment.
 - Click on the following for instructions:
+
+## Week Six
+
+**Monday, February 16th through Sunday, February 22nd**
+
+### Module Eight: Inheritance and Polymorphism
+
+In the last module, you learned about the differences between procedural and Object-Oriented development, the StringBuilder and StringBuffer classes, and primitive wrapper classes. In this module, you will learn about inheritance, polymorphism, ArrayList, LinkedList, and Sets and Maps.
+
+#### Deliverables
+- Review Module Resources.
+- Module 8 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 8 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+- Provided Videos and Examples:
+    - Packages Video & Examples
+    - Methods Objects Video & Examples
+    - Immutable Objects, Scope, and ‘this’ Video & Examples
+    - Wrapper Classes Video & Examples
+    - Java Strings Video & Examples
+    - String Builder Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 11
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/), including Java Inheritance, Java Polymorphism, Java ArrayList, Java LinkedList, Java HashMap, Java HashSet, and Java Iterator.
+
+#### Discussion Board
+**Discussion Question:**
+
+
+Select at least two of the following topics on Java features for your initial. Provide a code example, where necessary, to elaborate on your thoughts.
+
+- Inheritance
+- Polymorphism
+- ArrayList
+- LinkedList
+- HashMap
+- HashSet
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 8.2: Inheritance and Polymorphism
+**Required Action:**
+
+Follow the directions below:
+
+Create a class \[yourName\]ArrayListTest. Examples:
+
+- TomArrayListTest
+- SueArrayListTest
+- CindyArrayListTest
+- Etc.
+
+This class is to contain:
+
+- A method that receives an ArrayList populated with an Integer data type holding the integers received from user input.
+- The user input is to accept Integers that are then assigned to the ArrayList until a value of 0 is entered, which is also assigned to the ArrayList.
+- The ArrayList is then to be sent to the method.
+- The method is then to return the largest value in the ArrayList.
+- If the ArrayList is sent in empty, the method will then return 0.
+- The method signature is to be public static Integer max (ArrayList list).
+- Write additional code for testing your method.
+- The method will return the largest value that is displayed to the user.
+
+Assignment Requirements and Grading:
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_8_csd402.zip.
+- Attach the zip file to this assignment
