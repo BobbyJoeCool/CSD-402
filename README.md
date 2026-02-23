@@ -538,3 +538,67 @@ Assignment Requirements and Grading:
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_8_csd402.zip.
 - Attach the zip file to this assignment
+
+## Week Seven
+
+**Monday, February 23rd through Sunday, March 1st**
+
+### Module Nine: Exception Handling & Text I/O
+
+In the last module, you learned about inheritance, polymorphism, ArrayList, LinkedList, and Sets and Maps. In this module, you will learn about Exceptions and their handling, include try, catch, and finally. You will also learn about using text I/O.
+
+#### Deliverables
+
+- Review Module Resources.
+- Module 9 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 9 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+
+- Provided Videos and Examples:
+    - Exceptions Video & Examples
+    - Try Finally Video & Examples
+    - Exceptions Part 2 Video & Examples
+    - Files Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 12
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/) including, Java Exceptions, Java Files, Java Create/Write Files, Java Read Files, and Java Delete Files.
+
+#### Discussion Board
+
+**Discussion Question:**
+
+Select at least two of the following topics on Java features for your initial post. Provide a code example, where necessary, to elaborate your thoughts.
+
+- Checked vs. Unchecked Exceptions.
+- Exceptions: try/catch/throw.
+- Exceptions: finally – both with or without catch.
+- printStackTrace method of class Exception.
+- Exceptions Declared and Not Handled.
+- Create, Write, and Delete Files.
+- Classes: FileSystem, Paths, Files, and BasicFileAttributes.
+- Classes: BufferedOutputStream and OutputStream.
+- Classes: BufferedReader and InputStreamReader.
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 9.2: Exception Handling & Text I/O
+
+For this assignment, you will create two different programs. Follow the instructions for each below.
+
+- **Program 1:** Write a program that uses an ArrayList filled with a minimum of 10 Strings. Use a ‘for-each’ loop to print the ArrayList collection. Then ask a user which element they would like to see again. Then, attempt to print the element in a try/catch format, which will result in the element being displayed. If the element value received is invalid, display a message that an Exception has been thrown, displaying “Out of Bounds”. In this program, include the use of Autoboxing/Auto-Unboxing, working with a user String input.
+- **Program 2:** Write a program to create a new file titled data.file, if the file does not exist. Then write to the new file, adding 10 randomly generated numbers, or append 10 randomly generated numbers to a previous file. Each integer is to be separated by a space. Close the file, then reopen the file, read the data from the file, and display it.
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_9_csd402.zip.
+- Attach the zip file to this assignment.
