@@ -602,3 +602,68 @@ For this assignment, you will create two different programs. Follow the instruct
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_9_csd402.zip.
 - Attach the zip file to this assignment.
+
+## Week Eight
+
+**Monday, March 2nd through Sunday, March 8th**
+
+### Module Ten: Introduction: Abstract Classes and Interfaces
+
+In the last module, we learned about Exceptions, their handling, and using text I/O. In this module, we will learn about writing abstract classes along with interfaces. Using these, we will also learn about Comparable and Cloneable.
+
+#### Deliverables
+
+- Review Module Resources.
+- Module 10 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 10 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+
+- Provided Videos and Examples:
+    - Abstract Classes Video & Examples
+    - Interfaces Video & Examples
+    - Clone and Compare Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson
+    - Read Chapter 13
+- Read the Java Tutorial at [W3 Schools/Java](https://www.w3schools.com/java/), including Java Abstraction and Java Interface.
+
+#### Discussion Board
+
+**Discussion Question:**
+
+Select at least **two** of the following topics on Java features for your initial post. Provide a code example, where necessary, to elaborate your thoughts.
+
+- BigInteger & BigDecimal Classes
+- Calendar & GregorianCalendar Classes
+- Cloneable Interface
+- Rational Class.
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 10.2: Abstract Clases and Interfaces Instructions
+
+**Required Action:**
+
+Complete the following:
+
+- Create an abstract Division class with fields for a company's division name and account number, and an abstract display () method that will be defined in the subclasses.
+- Use a constructor in the superclass that requires values for both fields.
+- Create two subclasses named InternationalDivision and DomesticDivision.
+- The InternationalDivision class includes a field for the country in which the division is located, a field for the language spoken, and a constructor that requires all fields when created.
+- The DomesticDivision class includes a field for the state in which the division is located and a constructor that requires all fields when created.
+- Write an application named UseDivision that creates two instances of each of these concrete classes (4 total instances).
+- Save the files as: Division, InternationalDivision, DomesticDivision, and UseDivision.
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_10_csd402.zip.
+- Attach the zip file to this assignment.
