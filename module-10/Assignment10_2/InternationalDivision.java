@@ -27,9 +27,9 @@ public class InternationalDivision extends Division{
      * @param accountNumber the account number for this division
      */
     public InternationalDivision(String country, String language, String name, int accountNumber) {
+        super(name, accountNumber);
         this.country = country;
         this.language = language;
-        super(name, accountNumber);
     }
 
     /**

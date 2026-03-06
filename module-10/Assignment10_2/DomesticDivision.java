@@ -23,8 +23,8 @@ public class DomesticDivision extends Division {
      * @param accountNumber the account number for this division
      */
     public DomesticDivision(String state, String name, int accountNumber) {
-        this.state = state;
         super(name, accountNumber);
+        this.state = state;
     }
 
     /**

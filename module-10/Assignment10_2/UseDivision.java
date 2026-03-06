@@ -24,7 +24,7 @@ public class UseDivision {
         List<Division> divisions = new ArrayList<>();
 
         divisions.add(new InternationalDivision("Germany", "German", "Division of Fire", 5309));
-        divisions.add(new InternationalDivision("Franch", "French", "Division of Water", 1701));
+        divisions.add(new InternationalDivision("France", "French", "Division of Water", 1701));
         divisions.add(new DomesticDivision("Iowa", "Division of Earth", 1984));
         divisions.add(new DomesticDivision("Nebraska", "Division of Air", 1138));
 
