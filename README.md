@@ -667,3 +667,74 @@ Complete the following:
     - \<your_last_name\>-\<module_number\>\<course\>.zip.
     - Example: darrell_mod_10_csd402.zip.
 - Attach the zip file to this assignment.
+
+## Week Nine
+
+**Monday, March 9th through Sunday, March 14th**
+
+### Module Eleven: Introduction: JavaFX Basics
+
+In the last module, you learned about writing abstract classes and interfaces. You also learned about Comparable and Cloneable. In this module, you will learn about the basics of JavaFX.
+
+#### Deliverables
+
+- Review Module Resources.
+- Module 11 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 11 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+- Module 11 Redo Assignment - Due by Sunday 11:59 p.m., CST.
+
+#### Resources
+
+- Provided Videos and Examples:
+    - JavaFX Intro Video & Examples
+- Introduction to Java, Programming and Data Structures; Liang; Pearson 
+    - Read Chapter 14
+- Search the web for Java information on JavaFX features, such as general introduction information for JavaFX, JavaFX shapes, and JavaFX Layouts. One possible helpful resource is [Java Introduction](https://www.w3schools.com/java/java_intro.asp) (w3schools.com, 2024).
+
+
+#### Discussion Board
+
+**Discussion Question:**
+
+Explore the history, benefits, and drawbacks of AWT, Swing, and JavaFX GUI platforms, and discuss their compatibility with different Java versions. Compare similar applications built using Swing and JavaFX and document the code differences to illustrate their unique features. Engage in a concise discussion on the suitability of each platform for various development scenarios, considering their performance, flexibility, and future prospects.
+
+- **What:** What are you writing about? Give the audience a brief overview of the topic by providing them with foundational information (history, background information, etc.).
+- **How:** How is the information relevant? Apply personal knowledge (this can be through research or actual practiced knowledge) to build trust with the audience.
+- **Why:** Justify your position and/or course of action. The audience needs proof that the information you are presenting is credible and actionable.
+
+#### Assignments
+
+##### Assignment 11.2: JavaFP Paper Instructions
+
+**Required Action:**
+
+1) Research the web for two of the JavaFX topics from the list below. Provide examples on each of the topics, along with a program file that includes documentation of the actual code. Include a link to the sites you are referencing in your paper. Your paper should be 700 words in length (excluding your references and code). Your paper will automatically be checked via SafeAssign for an originality/plagiarism review.
+1) Note: Your code should not be in your paper; it is to be a separate source code file for execution/testing and does not count towards the total word count.
+1) JavaFX HBox
+1) JavaFX VBox
+1) JavaFX FlowPane
+1) JavaFX BorderPane
+1) JavaFX GridPane
+    a) JavaFX ScrollPane
+    b) JavaFX TitledPane
+    c) JavaFX Accordion
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in Documentation Requirements.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit. File name:
+    - \<your_last_name\>-\<module_number\>\<course\>.zip.
+    - Example: darrell_mod_11_csd402.zip.
+- Attach the zip file to this assignment.
+
+##### Assignment 11.3 Redo Assignment
+
+**Required Action:**
+
+For this assignment, you may redo one of the programming assignments you previously did and are not satisfied with your score.
+
+Attach your work to this assignment, and you will be given makeup points based on the quality of the update.
+
+Include which module assignment you are redoing for this assignment.
